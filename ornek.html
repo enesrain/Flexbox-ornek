@@ -86,26 +86,25 @@
         height: 120px;
         flex-wrap: nowrap;
       }
-      footer .top {
+      footer div {
         background-color: red;
-        flex-basis: 50%;
+        flex-basis: 25%;
         flex-shrink: 0;
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
         align-items: center;
+        justify-content: center;
+        border-right:2px solid white;
+        height: 100px;
+       
       }
-      footer .bottom {
-        background-color: darkred;
-        flex-basis: 50%;
-        flex-shrink: 0;
-        display: flex;
-        flex-direction: row;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
+   
 
+        footer {
+         
+         flex-direction: row;
+     }
+     
+    
       @media (max-width: 700px) {
         header {
           flex-wrap: wrap;
@@ -118,16 +117,12 @@
 
         footer {
           flex-direction: column;
-          height: 240px;
+          height: 400px;
         }
-        .top {
-          flex-shrink: 1;
-          height: 120px;
+        footer div {
+          border-bottom: 2px solid white;
         }
-        .bottom {
-          flex-shrink: 1;
-          height: 120px;
-        }
+       
       }
 
       @media (max-width: 1455px) {
@@ -168,26 +163,26 @@
     </main>
 
     <footer>
-      <div class="top">
-        <div class="left">
+    
+        <div class="bir">
           Daraltılamaz <br />
           flex-basis ile genişlik
         </div>
-        <div class="right">
+        <div class="iki">
           Daraltılamaz <br />
           flex-basis ile genişlik
         </div>
-      </div>
-      <div class="bottom">
-        <div class="left">
+   
+      
+        <div class="uc">
           Daraltılamaz <br />
           flex-basis ile genişlik
         </div>
-        <div class="right">
+        <div class="dort">
           Daraltılamaz <br />
           flex-basis ile genişlik
         </div>
-      </div>
+     
     </footer>
   </body>
 </html>
